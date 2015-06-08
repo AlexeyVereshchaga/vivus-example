@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ingestion"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:checkedButton="@+id/breakfast">
+
+    <RadioButton
+        android:id="@+id/breakfast"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:drawableTop="@drawable/meal_track_breakfast_selector"
+        android:button="@null"
+        android:background="@null"
+        android:layout_weight="1" />
+
+    <RadioButton
+        android:id="@+id/lunch"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:button="@null"
+        android:background="@null"
+        android:drawableTop="@drawable/meal_track_lunch_selector" />
+
+    <RadioButton
+        android:id="@+id/dinner"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:button="@null"
+        android:background="@null"
+        android:drawableTop="@drawable/meal_track_dinner_selector" />
+
+    <RadioButton
+        android:id="@+id/snacks"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:button="@null"
+        android:background="@null"
+        android:drawableTop="@drawable/meal_track_snacks_selector" />
+</RadioGroup>

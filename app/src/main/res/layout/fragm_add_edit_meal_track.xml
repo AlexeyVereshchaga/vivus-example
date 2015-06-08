@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/food_tracker_add_edit_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:weightSum="100">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="75"
+            android:text="@string/food_tracker_amount"
+            style="@style/EditTextFoodTrackNotEditableStyle" />
+
+        <EditText
+            android:id="@+id/et_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="25"
+            android:text="1"
+            android:inputType="numberDecimal"
+            style="@style/EditTextFoodTrackEditableStyle" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_unit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:weightSum="100">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="75"
+            android:text="@string/food_tracker_unit"
+            style="@style/TextViewFoodTrackStyle" />
+
+        <TextView
+            android:id="@+id/tv_unit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="25"
+            style="@style/TextViewFoodTrackEditableStyle" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/food_tracker_add_edit_background">
+
+        <Button
+            android:id="@+id/btn_food_track_log"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/meal_log_button"
+            android:textColor="@drawable/login_button_text_color_selector"
+            android:textSize="18sp"
+            android:background="@drawable/login_button"
+            android:layout_marginLeft="@dimen/food_tracker_log_button_left_right_margin"
+            android:layout_marginRight="@dimen/food_tracker_log_button_left_right_margin"
+            android:layout_marginBottom="15dp"
+            android:layout_gravity="bottom" />
+    </FrameLayout>
+
+</LinearLayout>

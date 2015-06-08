@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/weight_track_ll_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@android:color/transparent">
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/weight_track_btn_save"
+            android:textSize="19sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/weight_track_btn_save_shape_active"
+            android:layout_weight="0.4" />
+
+        <Button
+            android:id="@+id/btn_delete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/weight_track_btn_delete"
+            android:textSize="19sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/weight_track_btn_delete_shape_active"
+            android:layout_weight="0.6" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_progress"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/diff_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:text="@string/weight_track_difference_txt_loading" />
+
+        <TextView
+            android:id="@+id/txt_difference"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:maxLength="8"
+            android:textColor="@color/weight_track_footer_txt_value"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="0.0" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:text="@string/weight_track_difference_txt_stub3" />
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_below="@+id/ll_progress"
+        android:layout_alignParentLeft="true"
+        android:progress="0"
+        android:layout_margin="10dp"
+        android:progressDrawable="@drawable/weight_track_progress_positive"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/weight_track_start_txt_stub"
+        android:layout_below="@+id/progress"
+        android:textColor="#ff5249"
+        android:layout_alignLeft="@+id/progress"
+        android:layout_alignStart="@+id/progress"
+        android:layout_marginLeft="15dp"
+        android:id="@+id/textView" />
+
+    <TextView
+        android:id="@+id/start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@+id/progress"
+        android:layout_toRightOf="@+id/textView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/weight_track_goal_txt_stub"
+        android:layout_marginRight="15dp"
+        android:textColor="#ff5249"
+        android:layout_below="@+id/progress"
+        android:layout_alignRight="@+id/progress"
+        android:layout_alignEnd="@+id/progress"
+        android:id="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/goal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:layout_marginRight="5dp"
+        android:layout_below="@+id/progress"
+        android:layout_toLeftOf="@+id/textView2" />
+
+
+</RelativeLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@null">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:background="@null">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="14sp"
+            android:padding="5dp"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:background="@drawable/border_of_table_field"
+            android:text="@string/dashboard_table1_starting_weight" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:padding="5dp"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:background="@drawable/border_of_table_field"
+            android:layout_weight="1"
+            android:text="@string/dashboard_table1_current_weight" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:padding="5dp"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:background="@drawable/border_of_table_field_blue"
+            android:layout_weight="1"
+            android:text="@string/dashboard_table1_goal_weight" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:background="@null">
+
+        <TextView
+            android:id="@+id/starting_weight"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:text="@string/dashboard_table1_current_weight_txt_stub"
+            android:singleLine="true"
+            android:stretchColumns="1"
+            android:background="@drawable/border_of_table_value"
+            android:gravity="center"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/current_weight"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:text="@string/dashboard_table1_current_weight_txt_stub"
+            android:stretchColumns="1"
+            android:background="@drawable/border_of_table_value"
+            android:textColor="@android:color/black"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/goal_weight"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:text="@string/dashboard_table1_current_weight_txt_stub"
+            android:singleLine="true"
+            android:stretchColumns="1"
+            android:background="@drawable/border_of_table_value"
+            android:gravity="center"
+            android:textColor="@android:color/black" />
+    </TableRow>
+</TableLayout>

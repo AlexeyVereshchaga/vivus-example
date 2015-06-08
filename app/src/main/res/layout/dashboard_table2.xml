@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@android:color/transparent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="14sp"
+            android:padding="5dp"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:background="@drawable/border_of_table_field"
+            android:text="@string/table_target" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:padding="5dp"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:background="@drawable/border_of_table_field"
+            android:layout_weight="1"
+            android:text="@string/table_food" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:padding="5dp"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:background="@drawable/border_of_table_field"
+            android:layout_weight="1"
+            android:text="@string/table_activity" />
+
+        <TextView
+            android:id="@+id/header_of_under_calories"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:padding="5dp"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:background="@drawable/border_of_table_field_blue"
+            android:layout_weight="1"
+            android:text="@string/table_under" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@android:color/transparent">
+
+        <TextView
+            android:id="@+id/target_calories"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:textSize="14sp"
+            android:padding="5dp"
+            android:background="@drawable/border_of_table_value"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:text="@string/table_init_calories" />
+
+        <TextView
+            android:id="@+id/consumed_calories"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:textSize="14sp"
+            android:padding="5dp"
+            android:background="@drawable/border_of_table_value"
+            android:textColor="@android:color/black"
+            android:gravity="center"
+            android:text="@string/table_init_calories" />
+
+        <TextView
+            android:id="@+id/burned_calories"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:layout_width="1dp"
+            android:textSize="14sp"
+            android:padding="5dp"
+            android:background="@drawable/border_of_table_value"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:text="@string/table_init_calories" />
+
+        <TextView
+            android:id="@+id/under_calories"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="14sp"
+            android:singleLine="true"
+            android:padding="5dp"
+            android:background="@drawable/border_of_table_value"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:text="@string/table_init_calories" />
+    </TableRow>
+</TableLayout>

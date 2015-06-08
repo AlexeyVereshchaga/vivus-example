@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Ready Track</string>
+
+    <!--Validation-->
+    <!--todo lead to one name -->
+    <string name="login_empty">Email or password is incorrect</string>
+    <string name="login_invalid">Email or password is incorrect</string>
+    <string name="password_invalid">Email or password is incorrect</string>
+
+    <!--Login Fragment-->
+    <string name="login">Login</string>
+    <string name="login_hint">Email Address</string>
+    <string name="password_hint">Password</string>
+    <string name="login_button">Log In</string>
+    <string name="sign_up_text">Sign Up</string>
+    <string name="powered_by">powered by</string>
+
+    <!--Registration-->
+    <string name="registration_header">Sign Up</string>
+    <string name="forgot_password_header">Forgot Password</string>
+
+    <!--Error Dialog-->
+    <string name="title_error_dialog">Error</string>
+    <string name="btn_ok">OK</string>
+
+    <!--Footer-->
+    <!--todo check text-->
+    <string name="footer_text">You should always consult with your healthcare provider\n
+        before introducing any changes to your diet or level of\n
+        physical activity.</string>
+    <string name="footer_safety_information">Important Safety Information</string>
+
+    <!--App-->
+    <string name="dashboard_title">DASHBOARD</string>
+    <string name="select_category_title">Select Category</string>
+    <string name="exercise_search">Search for an Activity</string>
+    <string name="meal_tack_search">Search for a Meal</string>
+    <string name="exercise_track_search_hint">Search for an Activity</string>
+    <string name="meal_log_button">Log</string>
+    <string name="exercise_log_button">Log</string>
+    <string name="meal_tack_view_meal_log_btn">View Meal Log</string>
+    <string name="exercise_only_enter">Only enter the time you actually exercised.</string>
+    <string name="exercise_input_at_least">Input at least one of the fields below</string>
+    <string name="about_ready">About Ready Track</string>
+    <string name="calendar">Calendar</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="running_10mph">Running 10 Mph</string>
+    <string name="meal_tracking">Meal Tracking</string>
+    <string name="weight_tracking">Weight Tracking</string>
+
+    <!--Meal tracking-->
+    <string name="meal_track_filter_all">All</string>
+    <string name="meal_track_filter_recent">Recent</string>
+    <string name="meal_track_filter_frequent">Frequent</string>
+    <string name="meal_track_filter_favorites">Favorites</string>
+    <string name="food_track_category_breakfast">Breakfast</string>
+    <string name="food_track_category_lunch">Lunch</string>
+    <string name="food_track_category_dinner">Dinner</string>
+    <string name="food_track_category_snacks">Snacks</string>
+    <!--Meal tracking Add/Edit-->
+    <string name="meal_track_add">Add Amount</string>
+    <string name="meal_track_edit">Edit Amount</string>
+    <string name="food_tracker_amount">Amount</string>
+    <string name="food_tracker_unit">Unit</string>
+    <string name="food_tracker_select_unit">Select Unit</string>
+
+    <!--table of calories-->
+    <string name="table_under">UNDER</string>
+    <string name="table_over">OVER</string>
+    <string name="table_init_calories">0</string>
+    <string name="table_activity">ACTIVITY</string>
+    <string name="table_food">FOOD</string>
+    <string name="table_target">TARGET (CAL)</string>
+
+    <string name="confirm_dialog_activity_txt">Are you sure you want \n to delete this activity?</string>
+    <string name="confirm_dialog_weight_txt">Are you sure you want \n to delete this logged weight?</string>
+    <string name="confirm_dialog_meal_txt">Are you sure you want \n to delete this logged meal?</string>
+
+    <string name="confirm_dialog_title">Delete</string>
+    <string name="confirm_dialog_btn_close">Close</string>
+    <string name="confirm_dialog_btn_delete">Yes</string>
+    <string name="dashboard_framg_btn_food">Food</string>
+    <string name="dashboard_framg_btn_activity">Activity</string>
+    <string name="dashboard_framg_btn_weight">Weight</string>
+    <string name="dashboard_table1_starting_weight">STARTING WEIGHT</string>
+    <string name="dashboard_table1_current_weight">CURRENT WEIGHT</string>
+    <string name="dashboard_table1_goal_weight">GOAL WEIGHT</string>
+    <string name="meal_adapter_row3_txt_stub">10 Minutes | 1 Mile | 12 Steps | 202 Calories</string>
+    <string name="meal_adapter_row1_txt_stub">Running 10 Mph; 6 Min Mile</string>
+    <string name="meal_amount_error_message">Please enter amount</string>
+    <string name="dashboard_table1_current_weight_txt_stub">0</string>
+    <string name="my_account_title_txt">My Settings</string>
+    <string name="weight_track_et_hint">Enter Current Weight(lbs.)</string>
+    <string name="weight_track_btn_save">Save</string>
+    <string name="weight_track_btn_delete">Delete</string>
+    <string name="weight_track_goal_txt_stub">Goal</string>
+    <string name="weight_track_start_txt_stub">Start</string>
+    <string name="weight_track_difference_txt_gained">You\'ve gained </string>
+    <string name="weight_track_difference_txt_lose">You\'ve lost </string>
+    <string name="weight_track_difference_txt_stub3"> pounds</string>
+    <string name="weight_track_footer_txt_last">Last recorded weight</string>
+    <string name="weight_track_footer_txt_bmi">BMI</string>
+    <string name="weight_track_footer_txt_date_stub">175 lbs. on Tue, Sep 09, 2014</string>
+    <string name="weight_track_footer_txt_value_stub">282.3</string>
+    <string name="exercise_track_duration">Duration</string>
+    <string name="exercise_track_minutes">minutes*</string>
+    <string name="exercise_track_view_all">View all</string>
+    <string name="exercise_track_distance">Distance</string>
+    <string name="exercise_track_enter_number">Enter Number</string>
+    <string name="exercise_track_steps">steps</string>
+    <!--<string name="exercise_track_error_duration_message">The duration must be a positive number</string>-->
+    <string name="exercise_track_error_duration_message">Please enter duration</string>
+    <string name="exercise_track_error_activity_empty_message">Please choose the activity</string>
+    <string name="weight_track_difference_txt_loading">Loading…</string>
+    <!--<string name="login_cant">Can\'t login</string>-->
+    <string name="login_no_internet_connection">No internet connection</string>
+    <string name="login_part_forgot_pass_txt">Forgot your password?</string>
+    <string name="login_part_you_dont_have_acc_txt">Don\'t have an account yet?</string>
+    <string name="drawer_log_out">Log out</string>
+
+    <string-array name="calendar_days_array">
+        <item>SU</item>
+        <item>MO</item>
+        <item>TU</item>
+        <item>WE</item>
+        <item>TH</item>
+        <item>FR</item>
+        <item>SA</item>
+    </string-array>
+</resources>

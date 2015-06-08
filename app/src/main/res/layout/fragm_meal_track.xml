@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white">
+
+        <include
+            android:id="@+id/meal_track_top_table"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            layout="@layout/meal_track_top_table" />
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="11dp"
+            layout="@layout/universal_track_search_et" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            android:background="@color/exercise_background">
+
+            <ListView
+                android:id="@+id/list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.9" />
+
+            <include
+                android:id="@+id/dashboard_table2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.01"
+                layout="@layout/dashboard_table2" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@color/exercise_background">
+
+            <Button
+                android:id="@+id/btn_view_meal_log"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/meal_tack_view_meal_log_btn"
+                android:textColor="@drawable/login_button_text_color_selector"
+                android:textSize="18sp"
+                android:padding="15dp"
+                android:background="@drawable/meal_track_btn_unclicable_bg"
+                android:layout_margin="10dp"
+                android:clickable="false" />
+        </FrameLayout>
+    </LinearLayout>
+</ScrollView>

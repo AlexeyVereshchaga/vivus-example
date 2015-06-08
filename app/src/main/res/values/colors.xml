@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Common-->
+    <color name="gray_text">#989693</color>
+    <color name="translucent80_background">#ccffffff</color>
+    <color name="error_dialog_red_background">#ff4d4d</color>
+    <color name="universal_item_pressed_background">#eaeaea</color>
+
+    <!--Footer-->
+    <color name="footer_safety_text">#2c77bd</color>
+
+    <!--Login-->
+
+    <color name="login_text">#3b8bca</color>
+    <color name="meal_tack_text_checked">#FFF</color>
+    <color name="meal_tack_text_unchecked">#5ab846</color>
+    <color name="login_background">#fafafa</color>
+    <color name="login_hint_text">#cbcac9</color>
+    <color name="login_text_powered_by">#a8a8a8</color>
+    <color name="login_button">#2c77bd</color>
+    <color name="login_button_pressed">#5cb947</color>
+    <color name="login_edit_text_border">#e6d5d5d5</color>
+    <color name="login_sign_up_text">#5cb947</color>
+    <color name="login_sign_up_text_pressed">#2c77bd</color>
+
+    <!--Exercise-->
+    <color name="confirm_dialog_separator_color">#c7c7c7</color>
+    <color name="confirm_dialog_ll_btns_bg">#ebebeb</color>
+    <color name="confirm_dialog_btn_close">#007aff</color>
+
+
+    <color name="dashboard_btns_txt_color">#2c77bd</color>
+
+    <color name="dashboard_separator_color">#d5d5d5</color>
+
+    <!--MealAdapter item -->
+    <color name="meal_adapter_separator">#dddddd</color>
+    <color name="meal_adapter_row3_txt_color">#444444</color>
+
+
+    <!--Exercise-->
+    <color name="exercise_search_hint">#c5c3c0</color>
+    <color name="exercise_background">#eeeeee</color>
+    <color name="exercise_search_border">#7ca3c8</color>
+    <color name="meal_track_search_border">#d5d5d5</color>
+    <color name="exercise_view_all">#59b846</color>
+    <color name="exercise_input_at_least">#989793</color>
+    <color name="exercise_edit_text_border">#dbdbdb</color>
+
+    <!--Calendar-->
+    <color name="calendar_background">#ededed</color>
+    <color name="calendar_day">#333333</color>
+    <color name="calendar_off_day">#989692</color>
+    <color name="calendar_month_days_background">#ededed</color>
+    <color name="calendar_day_of_week">#2b76bc</color>
+    <color name="calendar_day_selected">#2b76bc</color>
+    <color name="calendar_selected_border">#33a6da</color>
+    <color name="calendar_activity_day_border">#d7d7d7</color>
+    <color name="calendar_current_day">#5cb947</color>
+    <color name="calendar_header_background">#ededed</color>
+
+    <!--food tracker-->
+    <color name="food_tracker_row2_text">#6a6967</color>
+    <!--food tracker add/edit-->
+    <color name="food_tracker_add_edit_background">#ececec</color>
+    <color name="food_tracker_unit_text">#2c77bd</color>
+    <color name="food_tracker_unit_separator">#d8d8d8</color>
+    <!--Weight Tracker-->
+    <color name="weight_track_separator">#cecece</color>
+    <color name="weight_track_ll_bg">#ececec</color>
+    <color name="weight_track_footer_txt_value">#1a73bc</color>
+    <color name="weight_track_footer_txt_name">#969490</color>
+</resources>

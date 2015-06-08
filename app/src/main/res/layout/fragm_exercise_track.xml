@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white">
+
+        <RelativeLayout
+            android:id="@+id/rl_current_exercise"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/exercise_background">
+
+            <FrameLayout
+                android:id="@+id/fl_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <LinearLayout
+                    android:id="@+id/ll_list"
+                    android:splitMotionEvents="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/tv_view_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/exercise_track_view_all"
+                android:textColor="@color/exercise_view_all"
+                android:layout_marginRight="15dp"
+                android:paddingBottom="15dp"
+                android:layout_below="@id/fl_container"
+                android:layout_alignParentRight="true"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <!--todo lead to custom view-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="11dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/et_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:hint="@string/exercise_track_search_hint"
+                android:textColorHint="@color/exercise_search_hint"
+                android:padding="8dp"
+                android:textCursorDrawable="@drawable/cursor_drawable_meal_track_seach_et"
+                android:drawableLeft="@drawable/exercise_search"
+                android:background="@drawable/meal_track_search_background"
+                android:drawablePadding="5dp"
+                android:textColor="@android:color/black" />
+
+            <ImageButton
+                android:id="@+id/btn_clean_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:padding="5dp"
+                android:layout_marginLeft="5dp"
+                android:visibility="gone"
+                android:src="@drawable/close_big" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@color/exercise_background">
+
+            <ListView
+                android:id="@+id/list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="@string/exercise_input_at_least"-->
+        <!--android:textColor="@color/exercise_input_at_least"-->
+        <!--android:paddingLeft="15dp"-->
+        <!--android:paddingRight="15dp"-->
+        <!--android:textSize="15dp"-->
+        <!--android:layout_marginBottom="5dp" />-->
+        <LinearLayout
+            android:id="@+id/ll_unit_numbers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="10">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/et_duration"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/exercise_track_duration"
+                        android:textCursorDrawable="@null"
+                        android:layout_weight="3"
+                        android:inputType="number"
+                        style="@style/EditTextEditableStyle" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="7"
+                        android:text="@string/exercise_track_minutes"
+                        style="@style/EditTextNotEditableStyle" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/exercise_only_enter"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <EditText
+                    android:id="@+id/et_distance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/exercise_track_distance"
+                    android:textCursorDrawable="@null"
+                    android:inputType="number"
+                    android:layout_weight="3"
+                    style="@style/EditTextEditableStyle" />
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:text="miles"
+                    style="@style/EditTextNotEditableStyle" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:weightSum="10">
+
+                <EditText
+                    android:id="@+id/et_steps"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:textCursorDrawable="@null"
+                    android:hint="@string/exercise_track_enter_number"
+                    android:layout_weight="3"
+                    style="@style/EditTextEditableStyle" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:text="@string/exercise_track_steps"
+                    style="@style/EditTextNotEditableStyle" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/exercise_background">
+
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/exercise_log_button"
+                android:textColor="@drawable/login_button_text_color_selector"
+                android:textSize="18dp"
+                android:background="@drawable/login_button"
+                android:layout_margin="10dp" />
+        </FrameLayout>
+    </LinearLayout>
+
+</ScrollView>
